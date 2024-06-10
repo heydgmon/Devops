@@ -23,4 +23,5 @@
 # Codebuild에서 build 하는법
 https://medium.com/@saurabhdahibhate50/mastering-aws-codebuild-a-step-by-step-guide-a7cf9e037284
 
+빌드 성공한 파일 : buildespec.yaml
 
