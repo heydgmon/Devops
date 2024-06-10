@@ -22,3 +22,23 @@
 
 # Codebuild에서 build 하는법
 https://medium.com/@saurabhdahibhate50/mastering-aws-codebuild-a-step-by-step-guide-a7cf9e037284
+
+(build 성공한 파일)
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing NGINX - echo apt-get install NGINX
+      - sudo apt-get update
+      - sudo apt-get install nginx -y
+  build:
+    commands:
+      - echo Build started on date
+      - cp index.html /var/www/html
+  post_build:
+    commands:
+      - echo Configuring NGINX
+artifacts:
+  files:
+    -/var/www/html/index.html
