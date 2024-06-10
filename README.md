@@ -19,3 +19,6 @@
 
 # 로컬에서 codecommit으로 커밋하는 법
 1.위에꺼랑 동일하고 5만 바꾸면됨
+
+# Codebuild에서 build 하는법
+https://medium.com/@saurabhdahibhate50/mastering-aws-codebuild-a-step-by-step-guide-a7cf9e037284
