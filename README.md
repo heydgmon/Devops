@@ -1,4 +1,4 @@
-# Devops 갈고 닦은 경험들
+# Devops 
 
 # CodeCommit의 레포지토리를 로컬로 옮기는 법
 1.Codecommit 레포에서 코드 생성   
