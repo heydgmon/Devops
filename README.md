@@ -26,3 +26,6 @@ https://medium.com/@saurabhdahibhate50/mastering-aws-codebuild-a-step-by-step-gu
 빌드 성공한 파일 : buildespec.yaml (아티팩트와 cp부분 수정)
 
 s3에서 '열기'클릭 시 웹사이트 열림
+
+# Codedeploy 배포하는법
+https://sweetysnail1011.tistory.com/64
