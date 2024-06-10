@@ -16,3 +16,6 @@
 4.git branch -M master(마스터 브랜치)   
 5.git remote add origin github url(깃허브 저장소로 주소 추가)   
 6.git push -u origin master(마스터 브랜치에 푸시)   
+
+# 로컬에서 codecommit으로 커밋하는 법
+위에꺼랑 동일하고 5만 바꾸면됨
