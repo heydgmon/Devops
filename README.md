@@ -25,3 +25,4 @@ https://medium.com/@saurabhdahibhate50/mastering-aws-codebuild-a-step-by-step-gu
 
 빌드 성공한 파일 : buildespec.yaml
 
+s3에서 '열기'클릭 시 웹사이트 열림
