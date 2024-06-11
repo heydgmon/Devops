@@ -47,3 +47,6 @@ sudo cp /home/ec2-user/.ssh/authorized_keys /root/.ssh
 
 
 java -jar xxxxx.jar 
+   
+접속 : ec2 public ip:포트번호   
+The Tomcat connector configured to listen on port 8081 failed to start 배포할때 이런 오류가 생김   
