@@ -46,8 +46,8 @@ sudo cp /home/ec2-user/.ssh/authorized_keys /root/.ssh
 이후에 winscp root로 접속하면 접속된다   
 
 
-java -jar xxxxx.jar 
+4.java -jar xxxxx.jar 명령어 실행해서 배포 
    
-접속 : ec2 public ip:포트번호   
+5.접속 : ec2 public ip:포트번호   
 여기까지 하면 접속은 되는데 이후에 톰캣 포트 겹쳐져서 접속안됨  
 The Tomcat connector configured to listen on port 8081 failed to start 배포할때 이런 오류가 생김   
