@@ -45,3 +45,5 @@ PermitRootLogin은 위에 캡쳐와 같이 yes로 바꿔주고
 sudo cp /home/ec2-user/.ssh/authorized_keys /root/.ssh      
 이후에 winscp root로 접속하면 접속된다   
 
+
+java -jar xxxxx.jar 
