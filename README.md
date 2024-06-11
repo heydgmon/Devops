@@ -29,3 +29,17 @@ s3에서 '열기'클릭 시 웹사이트 열림
 
 # Codedeploy 배포하는법
 https://sweetysnail1011.tistory.com/64
+
+# ec2 배포 
+1.ami linux에 자바 설치   
+yum list java*   
+sudo yum install java-11-amazon-corretto.x86_64   
+java -version   
+
+2.winscp로 키 등록해서 jar 파일 옮기기(ec2-user)   
+
+3.ec2-user 권한 주기 chmod 740 /etc/sudoers   
+이후 sudo vi /etc/sudoers 이후    
+ec2-user ALL 권한 추가  
+여기서 막힘   
+
