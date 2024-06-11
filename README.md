@@ -38,8 +38,10 @@ java -version
 
 2.winscp로 키 등록해서 jar 파일 옮기기(ec2-user)   
 
-3.ec2-user 권한 주기 chmod 740 /etc/sudoers   
-이후 sudo vi /etc/sudoers 이후    
-ec2-user ALL 권한 추가  
-여기서 막힘   
+3.EC 2서버 winscp root 권한으로 접속   
+
+vi /etc/ssh/sshd_config   
+PermitRootLogin은 위에 캡쳐와 같이 yes로 바꿔주고      
+sudo cp /home/ec2-user/.ssh/authorized_keys /root/.ssh      
+이후에 winscp root로 접속하면 접속된다   
 
