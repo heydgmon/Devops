@@ -66,3 +66,7 @@ The Tomcat connector configured to listen on port 8081 failed to start 배포할
 CI = 빌드 및 테스트 자동화  
 CD = 배포 자동화  
 
+# git 개념
+1.git add = 로컬에 올릴 파일들을 list하는 작업     
+2.git commit = 로컬에 반영하는 작업   
+3.git push = 로컬 레포에서 remote 레포로 옮기는 작업 
