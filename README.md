@@ -59,5 +59,10 @@ The Tomcat connector configured to listen on port 8081 failed to start 배포할
  - .java 파일이 번역되어 .class 파일이 생성된다. (컴파일)   
  - 파일이 실행된다. (실행)   
 2. 실행 가능한 파일(.war, .jar 등)로 뽑아낸다. (빌드)   
-3. 웹 서버에 접근하여 원하는 디렉토리에 실행 파일을 올린다. (배포)   
+3. 웹 서버에 접근하여 원하는 디렉토리에 실행 파일을 올린다. (배포)
+
+
+# CI / CD
+CI = 빌드 및 테스트 자동화  
+CD = 배포 자동화  
 
