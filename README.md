@@ -70,3 +70,6 @@ CD = 배포 자동화
 1.git add = 로컬에 올릴 파일들을 list하는 작업     
 2.git commit = 로컬에 반영하는 작업   
 3.git push = 로컬 레포에서 remote 레포로 옮기는 작업 
+
+# jenkis ec2에 배포하는 방법
+https://velog.io/@carrot1st/Amazon-Linux-2023-%EC%97%90%EC%84%9C-Jenkins-%EC%84%A4%EC%B9%98 그대로 따라하면 됨
