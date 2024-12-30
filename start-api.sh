@@ -14,7 +14,7 @@ else
     echo "기존 프로세스가 없습니다."
 fi
 
-# dev 환경으로 default-name.jar 실행
+# prod 환경으로 default-name.jar 실행
 echo "default-name.jar를 prod 환경으로 실행합니다."
 cd ./current
 java -jar default-name.jar --spring.profiles.active=prod > ./default-name.log 2>&1
