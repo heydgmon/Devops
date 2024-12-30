@@ -4,7 +4,7 @@
 CI = 빌드 및 테스트 자동화  
 CD = 배포 자동화  
 
-# 로컬에서 소스를 만들고 서버에 배포하는 과정을 알아보자.
+# 로컬에서 소스를 만들고 서버에 배포하는 과정
 개발 툴을 사용하여 Java로 코딩한다고 생각해보자.   
   1. 코드를 짜고 Run을 눌러 실행한다. (컴파일, 실행)   
  - .java 파일이 번역되어 .class 파일이 생성된다. (컴파일)   
@@ -41,6 +41,7 @@ The Tomcat connector configured to listen on port 8081 failed to start 배포할
 4.git clone = 깃 레포에서 프로젝트 복제해 가져오는 작업
 
 
+# AWS 코드 시리즈
 # CodeCommit의 레포지토리를 로컬로 옮기는 법
 1.Codecommit 레포에서 코드 생성   
 2.Codecommit git 연동 권한 부여(iam)   
