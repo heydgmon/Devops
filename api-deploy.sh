@@ -23,3 +23,6 @@ cp /home/ec2-user/build/git/api/current/ktis-ai-chatbot-user-api/api/build/libs/
 
 echo '#### DEPLOY API...'
 cd "/home/ec2-user/apps/api/current"
+
+
+이 파일은 /build/git/api 경로에 있음
