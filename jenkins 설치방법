@@ -14,6 +14,8 @@ sudo yum upgrade
 
 sudo dnf install java-11-amazon-corretto -y
 
+자바 11을 설치할경우 일부 플러그인이 지원되지않음.. 17을 다운받아야함
+
 #Install Jenkins:
 sudo yum install jenkins -y
 
