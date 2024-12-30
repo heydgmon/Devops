@@ -1,37 +1,46 @@
-sudo yum update –y
+다음 명령을 사용하여 빠른 소프트웨어 업데이트를 수행하여 인스턴스의 소프트웨어 패키지가 최신 상태인지 확인하세요.
 
-# Add the Jenkins repo using the following command:
+[ec2-user ~]$ sudo yum update –y
+다음 명령을 사용하여 Jenkins repo를 추가합니다.
 
-sudo wget -O /etc/yum.repos.d/jenkins.repo \
+[ec2-user ~]$ sudo wget -O /etc/yum.repos.d/jenkins.repo \
     https://pkg.jenkins.io/redhat-stable/jenkins.repo
+패키지에서 설치를 활성화하려면 Jenkins-CI에서 키 파일을 가져옵니다.
 
-#Import a key file from Jenkins-CI to enable installation from the package:
+[ec2-user ~]$ sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+[ec2-user ~]$ sudo yum upgrade
 
-sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
-sudo yum upgrade
+Java 설치(Amazon Linux 2023):
 
-#Install Java (Amazon Linux 2023):
+[ec2-user ~]$ sudo dnf install java-17-amazon-corretto -y
 
-sudo dnf install java-11-amazon-corretto -y
+Jenkins 설치:
 
-자바 11을 설치할경우 일부 플러그인이 지원되지않음.. 17을 다운받아야함
+[ec2-user ~]$ sudo yum install jenkins -y
 
-#Install Jenkins:
-sudo yum install jenkins -y
+부팅 시 Jenkins 서비스가 시작되도록 설정합니다.
 
-#Enable the Jenkins service to start at boot:
-sudo systemctl enable jenkins
+[ec2-user ~]$ sudo systemctl enable jenkins
 
-#Start Jenkins as a service:
+Jenkins를 서비스로 시작합니다.
 
-sudo systemctl start jenkins
+[ec2-user ~]$ sudo systemctl start jenkins
 
-#웹브라우저열고
+다음 명령을 사용하여 Jenkins 서비스의 상태를 확인할 수 있습니다.
+
+[ec2-user ~]$ sudo systemctl status jenkins
+
+브라우저에서 http://<your_server_public_DNS>:8080에 연결합니다. 관리 인터페이스를 통해 Jenkins에 액세스할 수 있습니다.
+
 http://<EC2인스턴스의 IP>:8080/
-EC2 보안그룹 에서 인바운드. 8080 포트 추가함
 
-#패스워드 확인하기
+EC2 보안그룹 에서 인바운드 8080 포트 추가함
+
+
+# 패스워드 확인하기
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+
 
 #포트번호 변경
 
