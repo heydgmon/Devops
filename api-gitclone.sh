@@ -21,3 +21,4 @@ cd "${TIMESTAMP2}"
 git clone -b master https://jenkins:~~@gitlab.ktis.co.kr/jproject/ktis-ai-chatbot-user-api.git
 
 jenkins:~~~gitlab access token
+이 파일은 /build/git/api 경로에 있음
