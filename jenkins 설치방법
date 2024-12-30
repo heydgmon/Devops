@@ -30,9 +30,15 @@ sudo systemctl start jenkins
 http://<EC2인스턴스의 IP>:8080/
 EC2 보안그룹 에서 인바운드. 8080 포트 추가함
 
-
 #패스워드 확인하기
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+#포트번호 변경
+
+sudo vi /usr/lib/systemd/system/jenkins.service
+port 변경 후
+sudo systemctl daemon-reload 
+sudo systemctl restart jenkins
 
 #참고링크
 https://www.jenkins.io/doc/tutorials/tutorial-for-installing-jenkins-on-AWS/
