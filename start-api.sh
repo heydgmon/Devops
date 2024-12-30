@@ -23,3 +23,6 @@ java -jar default-name.jar --spring.profiles.active=prod > ./default-name.log 2>
 echo $! > ./default-name.pid
 
 echo "실행 완료! PID: $(cat ./default-name.pid)"
+
+
+이 파일은 apps/api 경로에 있음
