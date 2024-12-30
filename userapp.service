@@ -1,0 +1,16 @@
+[Unit]
+Description=Chatbot User App
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+WorkingDirectory=/home/ec2-user/apps/api/current
+ExecStart=/usr/bin/java -jar default-name.jar --spring.profiles.active=prod
+StandardOutput=append:/home/ec2-user/apps/api/userapp.log
+StandardError=append:/home/ec2-user/apps/api/userapp.log
+
+
+[Install]
+WantedBy=multi-user.target
