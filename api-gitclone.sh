@@ -18,4 +18,6 @@ ln -snf ./"${TIMESTAMP2}" ./current
 cd "${TIMESTAMP2}"
 
 # git clone 수행
-git clone -b master https://jenkins:GaXeG2bDSsZ2JRTeid6w@gitlab.ktis.co.kr/jproject/ktis-ai-chatbot-user-api.git
+git clone -b master https://jenkins:~~@gitlab.ktis.co.kr/jproject/ktis-ai-chatbot-user-api.git
+
+jenkins:~~~gitlab access token
