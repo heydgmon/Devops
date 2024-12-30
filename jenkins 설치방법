@@ -1,0 +1,30 @@
+sudo yum update –y
+
+# Add the Jenkins repo using the following command:
+
+sudo wget -O /etc/yum.repos.d/jenkins.repo \
+    https://pkg.jenkins.io/redhat-stable/jenkins.repo
+Import a key file from Jenkins-CI to enable installation from the package:
+
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+sudo yum upgrade
+Install Java (Amazon Linux 2023):
+
+sudo dnf install java-11-amazon-corretto -y
+Install Jenkins:
+
+sudo yum install jenkins -y
+Enable the Jenkins service to start at boot:
+
+sudo systemctl enable jenkins
+Start Jenkins as a service:
+
+sudo systemctl start jenkins
+웹브라우저열고
+
+http://<EC2인스턴스의 IP>:8080/
+EC2 보안그룹 에서 인바운드. 8080 포트 추가함
+
+패스워드 확인하기
+
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
