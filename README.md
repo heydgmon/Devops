@@ -40,14 +40,6 @@ The Tomcat connector configured to listen on port 8081 failed to start 배포할
 
 4.git clone = 깃 레포에서 프로젝트 복제해 가져오는 작업
 
-
-# AWS 코드 시리즈
-# CodeCommit의 레포지토리를 로컬로 옮기는 법
-1.Codecommit 레포에서 코드 생성   
-2.Codecommit git 연동 권한 부여(iam)   
-3.git bash에서 git clone + url 시 2의 자격증명 입력하라고 나옴   
-4.입력하면 로컬에 깔림   
-
 # github의 레포지토리를 로컬로 옮기는 법
 1.git bash에서 git clone + 레포 url 하면 옮겨짐
 
@@ -58,6 +50,15 @@ The Tomcat connector configured to listen on port 8081 failed to start 배포할
 4.git branch -M master(마스터 브랜치)   
 5.git remote add origin github url(깃허브 저장소로 주소 추가)   
 6.git push -u origin master(마스터 브랜치에 푸시)   
+
+
+# AWS 코드 시리즈
+# CodeCommit의 레포지토리를 로컬로 옮기는 법
+1.Codecommit 레포에서 코드 생성   
+2.Codecommit git 연동 권한 부여(iam)   
+3.git bash에서 git clone + url 시 2의 자격증명 입력하라고 나옴   
+4.입력하면 로컬에 깔림   
+
 
 # 로컬에서 codecommit으로 커밋하는 법
 1.위에꺼랑 동일하고 5만 바꾸면됨
