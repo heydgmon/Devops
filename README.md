@@ -49,7 +49,7 @@ The Tomcat connector configured to listen on port 8081 failed to start 배포할
 3.git commit -m "first commit" (커밋메시지)   
 4.git branch -M master(마스터 브랜치)   
 5.git remote add origin github url(깃허브 저장소로 주소 추가)   
-6.git push -u origin master(마스터 브랜치에 푸시)   
+6.git push -u origin master(마스터 브랜치에 푸시)    git push origin +master (강제푸시)
 
 
 # AWS 코드 시리즈
