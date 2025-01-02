@@ -1,3 +1,4 @@
+# jenkins에서 github master 브랜치 프로젝트 클론 후 빌드 및 실행하는 방법
 1.프로젝트 생성
 -Freestyle project
 
@@ -5,8 +6,10 @@
 git 클릭 -> 레포 url 클릭 -> 브랜치 클릭
 
 그러면 아래 디렉토리에 저장소가..만들어짐
-cd /var/lib/jenkins/workspace
-프로젝트 명 github
+cd /var/lib/jenkins/workspace/github
+
+그리고 여기에 git에서 clone받은 프로젝트 소스가 들어감
+
 
 아래는 git에서 clone 받은 이후 실행하는 스크립트
 
@@ -19,7 +22,7 @@ nohup java -jar demo-0.0.1-SNAPSHOT.jar
 exit
 
 
-## github에 푸쉬 시 자동으로 jenkins 빌드시키는 방법
+# github에 푸쉬 시 자동으로 jenkins 빌드시키는 방법
 1.jenkins 프로젝트의 "빌드유발"에서 github plugin에 있는 GitHub hook trigger for GITScm polling를 체크함
 2.github webhook생성
 3.github에 변경사항 푸쉬 시 자동으로 jenkins에 빌드됨
