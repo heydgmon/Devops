@@ -13,12 +13,12 @@ cd /var/lib/jenkins/workspace/github
 
 아래는 git에서 clone 받은 이후 실행하는 스크립트
 
-cd /var/lib/jenkins/workspace/github
-chmod 777 gradlew
-./gradlew build
-cd /var/lib/jenkins/workspace/github/build/libs
-chmod 777 demo-0.0.1-SNAPSHOT.jar
-nohup java -jar demo-0.0.1-SNAPSHOT.jar
+cd /var/lib/jenkins/workspace/github  
+chmod 777 gradlew  
+./gradlew build  
+cd /var/lib/jenkins/workspace/github/build/libs  
+chmod 777 demo-0.0.1-SNAPSHOT.jar  
+nohup java -jar demo-0.0.1-SNAPSHOT.jar  
 exit
 
 
