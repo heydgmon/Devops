@@ -16,10 +16,10 @@ CD = 배포 자동화
 3.git push = 로컬 레포에서 remote 레포로 옮기는 작업 
 4.git clone = 깃 레포에서 프로젝트 복제해 가져오는 작업
 
-# github의 레포지토리를 로컬로 옮기는 법
+* github의 레포지토리를 로컬로 옮기는 법
 1.git bash에서 git clone + 레포 url 하면 옮겨짐
 
-# 로컬에서 github로 커밋하는 법
+* 로컬에서 github로 커밋하는 법
 1.git init   
 2.git add 1.txt (커밋할 파일)   git add . (전부)
 3.git commit -m "first commit" (커밋메시지)   
