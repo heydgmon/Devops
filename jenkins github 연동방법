@@ -25,7 +25,8 @@ exit
 # github에 푸쉬 시 자동으로 jenkins 빌드시키는 방법
 1.jenkins 프로젝트의 "빌드유발"에서 github plugin에 있는 GitHub hook trigger for GITScm polling를 체크함
 2.github webhook생성
-- http://퍼블릭ip:포트/github-webhook/
+- 프로젝트 - 설정 - webook - webhook 추가
+- http://3.35.149.235:9090/github-webhook/
 3.github에 변경사항 푸쉬 시 자동으로 jenkins에 빌드됨
 
 [빌드 로그]
