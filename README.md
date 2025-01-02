@@ -20,7 +20,8 @@ CD = 배포 자동화
 1.git bash에서 git clone + 레포 url 하면 옮겨짐
 
 - 로컬에서 github로 커밋하는 법
-1.git init     
+  
+1.git init       
 2.git add 1.txt (커밋할 파일)   git add . (전부)
 3.git commit -m "first commit" (커밋메시지)   
 4.git branch -M master(마스터 브랜치)   
