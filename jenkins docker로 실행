@@ -19,3 +19,9 @@ docker run -d --name myjenkins -p 9090:8080 -v /var/jenkins_home jenkins/jenkins
 초기 비밀번호
 
 docker logs myjekins
+
+
+컨테이너가 이미 사용중이라고 하는 경우..
+docker restart 컨테이너 이름
+
+이렇게 하면 해결됨
