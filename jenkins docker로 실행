@@ -12,3 +12,7 @@ docker run --name myjenkins -p 9090:8080 -v /var/jenkins_home jenkins/jenkins
 -d붙이면 백그라운드에서도 계속 실행됨
 
 docker run -d --name myjenkins -p 9090:8080 -v /var/jenkins_home jenkins/jenkins
+
+초기 비밀번호
+
+docker logs myjekins
