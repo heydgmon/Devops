@@ -8,3 +8,7 @@ docker run --name myjenkins -p 9090:8080 -v /var/jenkins_home jenkins/jenkins
 
 -p 앞의 8080은 url 상에 접속할 때 외부 9090포트
 -p 뒤의 8080은 실제 서버 설정 포트
+
+-d붙이면 백그라운드에서도 계속 실행됨
+
+docker run -d --name myjenkins -p 9090:8080 -v /var/jenkins_home jenkins/jenkins
