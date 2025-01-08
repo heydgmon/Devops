@@ -1,4 +1,7 @@
 (cent os 계열 기준)
+※초기 서버 세팅 시 퍼블릭 존에 보안그룹 다 열어놓고 세팅한다음에.. 이미지 만들어놓고
+나중에 보안세팅 하는게 편함(외부에서 라이브러리 받아야 하기 때문)
+
 yum install docker
 sudo systemctl start docker
 sudo systemctl enable docker
