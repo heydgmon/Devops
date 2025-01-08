@@ -1,0 +1,10 @@
+(cent os 계열 기준)
+yum install docker
+sudo systemctl start docker
+sudo systemctl enable docker
+docker pull jenkins/jenkins   <--젠킨스 이미지 경로는 홈페이지 참조 필요
+
+docker run --name myjenkins -p 9090:8080 -v /var/jenkins_home jenkins/jenkins
+
+-p 앞의 8080은 url 상에 접속할 때 외부 9090포트
+-p 뒤의 8080은 실제 서버 설정 포트
