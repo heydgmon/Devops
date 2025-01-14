@@ -3,3 +3,11 @@ docker login
 dockerhub의 계정정보 입력
 
 docker pull docker.elastic.co/elasticsearch/elasticsearch:8.3.2
+docker images
+sudo sysctl -w vm.max_map_count=262144
+
+cat /proc/sys/vm/max_map_count
+262144
+
+docker run -p 80:80 -p 9090:9090 e76e95312216
+
