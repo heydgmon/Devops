@@ -1,0 +1,5 @@
+docker login
+
+dockerhub의 계정정보 입력
+
+docker pull docker.elastic.co/elasticsearch/elasticsearch:8.3.2
