@@ -51,3 +51,7 @@ docker exec -it kibana bash
 kibana@c5f876df70f4:~$ cd bin
 kibana@c5f876df70f4:~/bin$ ./kibana-verification-code 
 출력코드 6자리 등록
+
+--elasticsearch user 등록--
+docker exec -it elasticsearch bash
+./bin/elasticsearch-users useradd admin -p 1234 -r superuser
