@@ -41,9 +41,13 @@ docker update --restart always 컨테이너 번호
 docker exec -it elasticsearch bash
 
 --enrollment code--
+docker exec -it elasticsearch bash
+bin/elasticsearch-create-enrollment-token -s kibana
+출력 결과 복사
 
 --verification code(6자리)--
 docker exec -it kibana bash
 
 kibana@c5f876df70f4:~$ cd bin
 kibana@c5f876df70f4:~/bin$ ./kibana-verification-code 
+출력코드 6자리 등록
