@@ -55,3 +55,7 @@ kibana@c5f876df70f4:~/bin$ ./kibana-verification-code
 --elasticsearch user 등록--
 docker exec -it elasticsearch bash
 ./bin/elasticsearch-users useradd admin -p 1234 -r superuser
+
+--비밀번호 리셋--
+bin/elasticsearch-reset-password --username admin -i
+
