@@ -1,0 +1,20 @@
+# EC2 배포 
+1.ami linux에 자바 설치   
+yum list java*   
+sudo yum install java-11-amazon-corretto.x86_64   
+java -version   
+
+2.winscp로 키 등록해서 jar 파일 옮기기(ec2-user)   
+
+3.EC2서버 winscp root 권한으로 접속   
+
+vi /etc/ssh/sshd_config   
+PermitRootLogin은 위에 캡쳐와 같이 yes로 바꿔주고      
+sudo cp /home/ec2-user/.ssh/authorized_keys /root/.ssh      
+이후에 winscp root로 접속하면 접속된다   
+
+4.java -jar xxxxx.jar 명령어 실행해서 배포 
+   
+5.접속 : ec2 public ip:포트번호   
+여기까지 하면 접속은 되는데 이후에 톰캣 포트 겹쳐져서 접속안됨  
+The Tomcat connector configured to listen on port 8081 failed to start 배포할때 이런 오류가 생김
