@@ -59,3 +59,12 @@ docker exec -it elasticsearch bash
 --비밀번호 리셋--
 bin/elasticsearch-reset-password --username admin -i
 
+
+--logstash 설치--
+docker pull docker.elastic.co/logstash/logstash:8.10.1
+
+
+docker run --name logstash \
+  -v $(pwd)/logstash.conf:/logstash/logstash.conf \
+  -p 5044:5044 \
+  docker.elastic.co/logstash/logstash:8.10.1
