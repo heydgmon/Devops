@@ -63,7 +63,29 @@ bin/elasticsearch-reset-password --username admin -i
 --logstash 설치--
 docker pull docker.elastic.co/logstash/logstash:8.10.1
 
+--logstash 설정파일 제작- 
+input {
+  beats {
+    port => 5044  # Filebeat로부터 로그 수집
+  }
+}
 
+filter {
+  grok {
+    match => { "message" => "%{TIMESTAMP_ISO8601:timestamp} %{LOGLEVEL:loglevel} %{GREEDYDATA:message}" }
+  }
+}
+
+output {
+  elasticsearch {
+    hosts => ["http://localhost:9200"]
+    index => "logs-%{+YYYY.MM.dd}"
+  }
+  stdout { codec => rubydebug }  # 터미널에서 출력 확인
+}
+
+
+--logstash 실행--
 docker run --name logstash \
   -v $(pwd)/logstash.conf:/logstash/logstash.conf \
   -p 5044:5044 \
