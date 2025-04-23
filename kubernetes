@@ -1,2 +1,5 @@
 1.minikube 설치
 -> root 권한으로 실행 못하며, cpu 2코어 이상이 필요
+
+2.kubectl 설치
+-> curl -LO https://github.com/kubernetes/kubernetes/releases/tag/v1.33.0-rc.1
