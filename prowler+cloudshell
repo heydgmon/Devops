@@ -1,7 +1,10 @@
 python3 -m venv /tmp/prowler-env
 source /tmp/prowler-env/bin/activate
 
-pip install prowler
+pip install prowler (git clone 시 메모리 부족으로 안됨...)
 prowler aws --region ap-northeast-2
 
-git clone 시 메모리 부족으로 안됨...
+검사 진행시 html 파일 생성.. s3로 전송 후(cp)
+signed url 할당한 뒤에(cloudshell에서 할당 가능)
+url 공유하면 모든 사용자들 접근 가능함
+
