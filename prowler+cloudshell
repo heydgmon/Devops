@@ -3,3 +3,5 @@ source /tmp/prowler-env/bin/activate
 
 pip install prowler
 prowler aws --region ap-northeast-2
+
+git clone 시 메모리 부족으로 안됨...
