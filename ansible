@@ -21,3 +21,7 @@ ex)
 
 3.plyabook 실행
 ansible-playbook -i inventory.ini copy_file.yml
+
+
+Amazon Linux 2023 기본 상태에서 간단한 파일 전송 같은 작업은 Python 없어도 가능할 수 있다.
+(대상 서버에 python 설치하지 않아도됨)
