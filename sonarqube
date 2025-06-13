@@ -1,0 +1,6 @@
+1.서버 1대에 sonarqube 설치
+2.sonarqube와 gitlab 연동 설정
+3.코드 푸시 -> gitlab 서버가 프로젝트 브랜치에서 gitlab-ci.yml 감지
+4.gitlab Runner가 gitlab-ci.yml 실행
+5.maven통해 sonar scanner실행, 변경된 코드 분석
+6.sonarqube 서버로 결과 전송
